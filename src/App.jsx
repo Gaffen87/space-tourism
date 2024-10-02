@@ -10,7 +10,7 @@ function App() {
 	const [backgroundImage, setBackgroundImage] = useState(null);
 
 	// Get the path based on the current route
-	let path = location.pathname.slice(15);
+	let path = location.pathname.slice(1);
 	console.log(path);
 	if (path === "destinations") path = "destination";
 	if (!path) path = "home";
