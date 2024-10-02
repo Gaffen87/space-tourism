@@ -1,4 +1,6 @@
+import { NavLink } from "react-router-dom";
 import Logo from "../assets/shared/logo.svg";
+import data from "../data.json";
 
 const Navbar = () => {
 	return (
@@ -9,18 +11,23 @@ const Navbar = () => {
 			</div>
 			<div className="w-1/2">
 				<ul className="flex px-spacing-800 gap-spacing-600 mr-auto bg-white bg-opacity-5 w-full min-w-[664px] h-[96px] items-center justify-end backdrop-blur-2xl">
-					<li className="h-full flex items-center box-border border-y-4 border-y-transparent border-b-white transition-all duration-500 cursor-pointer">
+					<NavLink
+						to="home"
+						className="h-full flex items-center box-border border-y-4 border-y-transparent hover:border-opacity-50 hover:border-b-white transition-all duration-500 cursor-pointer"
+					>
 						00 HOME
-					</li>
-					<li className="h-full flex items-center cursor-pointer box-border border-y-4 border-y-transparent hover:border-opacity-50 hover:border-b-white transition-all duration-500">
-						01 DESTINATION
-					</li>
-					<li className="h-full flex items-center cursor-pointer box-border border-y-4 border-y-transparent hover:border-opacity-50 hover:border-b-white transition-all duration-500">
-						02 CREW
-					</li>
-					<li className="h-full flex items-center cursor-pointer box-border border-y-4 border-y-transparent hover:border-opacity-50 hover:border-b-white transition-all duration-500">
-						03 TECHNOLOGY
-					</li>
+					</NavLink>
+					{Object.keys(data).map((key, index) => {
+						return (
+							<NavLink
+								to={key}
+								key={key}
+								className="h-full flex items-center cursor-pointer box-border border-y-4 border-y-transparent hover:border-opacity-50 hover:border-b-white transition-all duration-500"
+							>
+								0{index + 1} {key.toUpperCase()}
+							</NavLink>
+						);
+					})}
 				</ul>
 			</div>
 		</nav>

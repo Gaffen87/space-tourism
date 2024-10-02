@@ -7,6 +7,14 @@ body {
 	background-color: black;
 }
 
+a.active {
+	border-bottom-color: white;
+}
+
+a.active:hover {
+	border-bottom-color: white;
+}
+
 .barlow-thin {
 	font-family: "Barlow", sans-serif;
 	font-weight: 100;
