@@ -17,3 +17,5 @@ Vite + React to build wep page
 ![alt text](image-1.png)
 
 ![alt text](image-2.png)
+
+<video controls src="20241004-1037-39.1471520.mp4" title="Title"></video>
