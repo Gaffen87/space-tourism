@@ -1,8 +1,7 @@
-# React + Vite
+# Space tourism web page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Challenge from [frontendmentor.com](www.frontendmentor.com)
 
-Currently, two official plugins are available:
+Figma design file and assets were supplied
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+All HTML, CSS, navigation and animations done by me

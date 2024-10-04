@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
-import { useLocation, Navigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import AnimatedOutlet from "./components/AnimatedOutlet";
 
 const images = import.meta.glob("./assets/*/background-*-desktop.jpg");
@@ -9,7 +9,6 @@ function App() {
 	const location = useLocation();
 	const [backgroundImage, setBackgroundImage] = useState(null);
 
-	// Get the path based on the current route
 	let path = location.pathname.slice(1);
 	console.log(path);
 	if (path === "destinations") path = "destination";
@@ -21,10 +20,10 @@ function App() {
 		// Resolve the image promise
 		if (images[imageKey]) {
 			images[imageKey]().then((module) => {
-				setBackgroundImage(module.default); // Set the resolved image URL
+				setBackgroundImage(module.default);
 			});
 		}
-	}, [location.pathname]); // Runs every time the route changes
+	}, [location.pathname, imageKey]);
 
 	return (
 		<div

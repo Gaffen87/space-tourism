@@ -20,10 +20,10 @@ const Home = () => {
 					</div>
 					<div className="w-1/2 flex gap-spacing-300 justify-center">
 						<Link
-							to="destinations"
-							className="relative w-60 h-60 bg-white text-space-blue-900 rounded-full font-bellefair text-[32px] leading-[36.67px] flex items-center justify-center"
+							to="../destinations"
+							className="relative w-60 h-60 bg-white *:hover:scale-110 text-space-blue-900 rounded-full font-bellefair text-[32px] leading-[36.67px] flex items-center justify-center hover:shadow-[0_0_10px_60px_rgba(255,255,255,0.2)] transition-all duration-500"
 						>
-							EXPLORE
+							<p className="transition-all duration-500">EXPLORE</p>
 						</Link>
 					</div>
 				</div>

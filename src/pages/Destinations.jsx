@@ -2,6 +2,7 @@ import AnimatedLayout from "../components/AnimatedLayout";
 import DestinationContent from "../components/DestinationContent";
 import data from "../data.json";
 import { useState } from "react";
+import.meta.glob("../assets/destinations/*/*.jpg");
 
 const Destinations = () => {
 	const [destination, setDestination] = useState(data.destinations[0]);
