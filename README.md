@@ -11,3 +11,9 @@ React Router 6 used for navigation
 Framer Motion used for animations
 
 Vite + React to build wep page
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
